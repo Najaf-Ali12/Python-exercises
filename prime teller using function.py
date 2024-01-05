@@ -7,7 +7,7 @@ def is_prime_trial_division(n):
 		return number, 'is negative'
 	# Loop through all numbers from 2 to
 	# the square root of n (rounded down to the nearest integer)
-	for i in range(2, int(n**0.5)+1):
+	for i in range(2, int(n/2)+1):
 		# If n is divisible by any of these numbers, return False
 		if n % i == 0:
 			return number ,"is not prime"
